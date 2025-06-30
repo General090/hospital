@@ -1,6 +1,9 @@
 import React from 'react'
-import Nav from '../layouts/nav.jsx'
-import Img1 from '../assets/img1.png'
+import Nav from '../../layouts/nav.jsx'
+import Img1 from '../../../assets/img1.png'
+import Operate from '../Home/operate.jsx'
+import Download from '../Home/download.jsx'
+import Theraphy from '../Home/therapy.jsx'
 
 const Home = () => {
   return (
@@ -14,17 +17,21 @@ const Home = () => {
           </div>
         </div>
 
-        <div>
-          <div>
+        <div className='flex items-center py-5 w-[50%] mx-auto gap-10'>
+          <div className='flex flex-col items-center gap-5'>
             <p>Our platform combines expert care, AI-driven tools, and a supportive community to help you heal, grow, and live fully.</p>
             <button className='bg-black px-4 py-2 text-white rounded-sm'>Get Started</button>
           </div>
 
-          <img src={Img1} />
+          <img src={Img1} className='w-[40%]' />
         </div>
       </div>
+
+      <Operate />
+      <Download />
+      <Theraphy />
     </Nav>
   )
 }
 
-export default Home;
+export default Home
