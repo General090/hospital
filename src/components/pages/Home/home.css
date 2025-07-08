@@ -1,0 +1,14 @@
+/* .background {
+    background-image: url("../../../assets/color.png");
+} */
+
+
+.image{
+    background-image: url(../../../assets/background.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    
+}
