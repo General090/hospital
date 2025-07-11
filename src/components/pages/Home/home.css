@@ -1,14 +1,9 @@
-/* .background {
-    background-image: url("../../../assets/color.png");
-} */
-
-
-.image{
-    background-image: url(../../../assets/background.png);
-    background-repeat: no-repeat;
-    width: 100%;
+.image {
+    background-image: 
+      linear-gradient(to right, #4B9569, rgba(75, 149, 105, 0.6), rgba(254, 211, 97, 0.8)),
+      url("../../../assets/background.png");
     background-size: cover;
     background-position: center;
-    height: 500px;
-    
-}
+    background-repeat: no-repeat;
+  }
+  

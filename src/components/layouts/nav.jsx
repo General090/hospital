@@ -22,7 +22,7 @@ const nav = ({ children }) => {
                 <Link to="/contact">Contact Us</Link>
 
                 <button className='border-1 border-[#FFC107] px-5 py-1 rounded-sm'>Log in</button>
-                <button className='bg-[#FFC107] text-white px-2 py-1 rounded-sm'>Get Started</button>
+                <Link to="/registration" className='bg-[#FFC107] text-white px-2 py-1 rounded-sm'>Get Started</Link>
             </div>
       </nav>  
 
