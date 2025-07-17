@@ -1,6 +1,6 @@
 import React from 'react'
-import Group from '../../../assets/Group-2.png'
-import People from '../../../assets/people.png'
+import Group from '../../../../assets/Group-2.png'
+import People from '../../../../assets/people.png'
 
 const vision = () => {
   return (

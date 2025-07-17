@@ -1,11 +1,9 @@
 import React from "react";
-import Nav from "../../layouts/nav";
-import LearnMore from "../../Props/Button/LearnMore";
-import { IoLocationSharp } from "react-icons/io5";
 import Abigail from '../../../assets/abigail.png'
-import Replays from './Replays'
+import { IoLocationSharp } from "react-icons/io5";
 
-const webinar = () => {
+
+const Replays = () => {
   const features = [
     {
       id: 1,
@@ -36,27 +34,13 @@ const webinar = () => {
   ]
 
   return (
-    <Nav>
-      <div className="sf-font">
-        <div className="bg-[#4B9569] h-[70vh] flex items-center justify-center">
-          <div className="w-[30%] space-y-5 text-center text-white">
-            <h1 className="font-bold text-2xl">
-              Mental Health Events & Webinars
-            </h1>
-            <p>
-              Nurture your mind with the latest mental health events and
-              webinars featuring industry experts, benefits leaders, and health
-              therapist
-            </p>
-            <LearnMore />
-          </div>
-        </div>
+    <div className="sf-font">
+      <div className="bg-[#4B9569] mt-2 py-7 text-center font-bold text-2xl text-white">
+        <h1>Replays of  Events & Webinars</h1>
+      </div>
 
-        <div className="bg-[#4B9569] mt-2 py-7 text-center font-bold text-2xl text-white">
-          <h1>Upcoming Events & Webinars</h1>
-        </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-5 pt-5 pb-10 px-20 text-white">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-5 pt-5 pb-10 px-20 text-white">
               {features.map((feature) => (
                 <div
                   key={feature.id}
@@ -95,11 +79,8 @@ const webinar = () => {
               <span>3</span>
             </div>
           </div>
-
-          <Replays />
-      </div>
-    </Nav>
+    </div>
   );
 };
 
-export default webinar;
+export default Replays;

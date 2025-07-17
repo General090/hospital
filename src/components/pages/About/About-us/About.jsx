@@ -1,13 +1,13 @@
 import React from "react";
-import Nav from "../../layouts/nav";
+import Nav from "../../../layouts/nav";
 import "./About.css";
-import Woman from "../../../assets/woman.png";
-import Settings from "../../../assets/settings.png";
-import Project from "../../../assets/project.png";
-import Worker from "../../../assets/worker.png";
-import Vision from "../About/vision"
-import Values from "../About/values"
-import LearnMore from '../../Props/Button/LearnMore'
+import Woman from "../../../../assets/woman.png";
+import Settings from "../../../../assets/settings.png";
+import Project from "../../../../assets/project.png";
+import Worker from "../../../../assets/worker.png";
+import Vision from "./vision"
+import Values from "./values"
+import LearnMore from '../../../Props/Button/LearnMore'
 
 const About = () => {
   const features = [

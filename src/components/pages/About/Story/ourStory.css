@@ -1,9 +1,3 @@
 .people {
-    background-image: 
-      linear-gradient(to right, #4B9569, rgba(75, 149, 105, 0.6), rgba(254, 211, 97, 0.8)),
-      url("../../../../assets/group-people.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  
+    background-image: url('../../../../assets/group-people.png');
+}

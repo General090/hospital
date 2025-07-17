@@ -6,13 +6,15 @@ const ourStory = () => {
   return (
     <Nav>
       <div className="sf-font">
-        <div className="people">
-          <h1>Every Story Matters</h1>
-          <p>
-            See what we are doing to improve Lives. Read real experiences of
-            growth, hope, and transformation
-          </p>
-          <LearnMore />
+        <div className="people h-[100vh] flex items-center justify-center">
+          <div className="w-[30%] text-center">
+            <h1>Every Story Matters</h1>
+            <p>
+              See what we are doing to improve Lives. Read real experiences of
+              growth, hope, and transformation
+            </p>
+            <LearnMore />
+          </div>
         </div>
       </div>
     </Nav>
