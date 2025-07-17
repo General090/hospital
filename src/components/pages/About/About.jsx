@@ -7,6 +7,7 @@ import Project from "../../../assets/project.png";
 import Worker from "../../../assets/worker.png";
 import Vision from "../About/vision"
 import Values from "../About/values"
+import LearnMore from '../../Props/Button/LearnMore'
 
 const About = () => {
   const features = [
@@ -43,14 +44,12 @@ const About = () => {
                 Our mission is Personal, <br />
                 it's more than just <br /> Business.
               </h1>
-              <p className="mt-4 text-[15px]">
+              <p className="mt-4 pb-5 text-[15px]">
                 At LiftedCare, we’re redefining what it means to care for mental
                 health in Africa. We're not just a platform; we're a movement
                 centred around people, purpose, and possibility.
               </p>
-              <button className="mt-5 bg-[#FFC107] px-4 py-2 text-white rounded-sm shadow-md">
-                Learn more
-              </button>
+              <LearnMore />
             </div>
           </div>
         </div>

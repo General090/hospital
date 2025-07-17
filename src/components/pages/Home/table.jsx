@@ -29,9 +29,6 @@ const ComparisonTable = () => {
       <div className="max-w-6xl mx-auto px-4">
         {/* Table headers */}
         <div className="py-3 flex justify-end border-b text-black border-yellow-400 pr-30">Traditional Therapist</div>
-        {/* <div className="grid grid-cols-3 font-semibold text-sm md:text-base border-b border-yellow-400">
-
-        </div> */}
 
         {/* Table rows */}
         {features.map((feature, i) => (

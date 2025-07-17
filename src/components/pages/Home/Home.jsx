@@ -7,11 +7,12 @@ import Download from "../Home/download.jsx";
 import Table from "../Home/table.jsx";
 import Questions from "../Home/questions.jsx";
 import { Link } from "react-router-dom";
+import LearnMore from '../../Props/Button/LearnMore'
 
 const Home = () => {
   return (
     <Nav>
-      <div>
+      <div className="sf-font">
         <div className="py-[6rem] pl-10 image pt-52 w-full">
           <div className="w-[30%] space-y-4 text-white">
             <h1 className="font-bold text-3xl">
@@ -21,9 +22,7 @@ const Home = () => {
               Personalized therapy, culturally aware support, and intelligent
               tools at your fingertips.
             </p>
-            <button className="bg-[#FFC107] px-4 py-2 text-white rounded-sm">
-              Learn more
-            </button>
+            <LearnMore />
           </div>
         </div>
 
