@@ -6,6 +6,8 @@ import Webinar from './components/pages/Webinar/Webinar.jsx'
 import Contact from './components/pages/Contact/Contact.jsx'
 import Registration from './components/Auth/Getting-Started/Registration.jsx'
 import OurStory from './components/pages/About/Story/ourStory.jsx'
+import Login from './components/Auth/Login.jsx'
+import GettingStarted from './components/Auth/Getting-Started/GetStarted.jsx'
 
 
 function App() {
@@ -18,7 +20,11 @@ function App() {
           <Route path="/story" element={<OurStory />} />
           <Route path="/webinar" element={<Webinar />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/registration" element={<Registration />} />
+          <Route path="/login" element={<Login />} />
+
+          <Route path="/registration" element={<Registration />}>
+            <Route path="started" element={<GettingStarted />} />
+          </Route>
         </Routes>
        </BrowserRouter>
     </>

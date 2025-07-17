@@ -33,9 +33,9 @@ const nav = ({ children }) => {
           <Link to="/webinar">Webinar</Link>
           <Link to="/contact">Contact Us</Link>
 
-          <button className="border-1 border-[#FFC107] px-5 py-1 rounded-sm">
+          <Link to="/login" className="border-1 border-[#FFC107] px-5 py-1 rounded-sm">
             Log in
-          </button>
+          </Link>
           <Link
             to="/registration"
             className="bg-[#FFC107] text-white px-2 py-1 rounded-sm"

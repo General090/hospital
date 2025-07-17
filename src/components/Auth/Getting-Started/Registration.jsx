@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import Nav from "../../layouts/nav";
 import Group3 from "../../../assets/Group-3.png";
+import LiftedCare from "../../Props/LiftedCare/LiftedCare";
+import { Link } from "react-router-dom";
 
 const Registration = () => {
   const [selectedDate, setSelectedDate] = useState("");
@@ -78,20 +80,17 @@ const Registration = () => {
                   />
                 </div>
 
-                <button className="bg-[#4B9569] text-white w-full py-2 rounded mb-10">
+                <Link
+                  to="/started"
+                  className="block bg-[#4B9569] text-white w-full py-2 rounded mb-10 text-center"
+                >
                   Next
-                </button>
+                </Link>
               </form>
             </div>
           </div>
 
-          <div className="font-bold italic text-2xl text-center w-[40%] mx-auto text-[#4b9569]">
-            <h1>LiftedCare</h1>
-            <p className="font-semibold text-[#93c0a5] text-xl">
-              Built by vision, backed by passion, sustained by impact. Together
-              we make mental health care affordable and accessible!
-            </p>
-          </div>
+          <LiftedCare />
         </div>
       </Nav>
     </>
