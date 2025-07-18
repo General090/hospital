@@ -40,7 +40,7 @@ const Replays = () => {
       </div>
 
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-5 pt-5 pb-10 px-20 text-white">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-5 pt-5 pb-10 px-5 lg:px-20 text-white">
               {features.map((feature) => (
                 <div
                   key={feature.id}

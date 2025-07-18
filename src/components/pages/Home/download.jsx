@@ -8,11 +8,11 @@ const download = () => {
         <img
             src={Phone}
             alt="Phone"
-            className='w-[18%] absolute -top-20 left-[58%] -translate-x-1/2 z-20'
+            className='lg:w-[18%] md:w-[38%] hidden md:block absolute lg:-top-20 md:-top-30 lg:left-[58%] md:left-[70%] -translate-x-1/2 z-20'
         />
-        <div className='bg-white flex items-center justify-between py-5 px-5 rounded-md relative z-10 w-[50%] mx-auto'>
+        <div className='bg-white flex items-center justify-between py-5 px-5 rounded-md relative z-10 lg:w-[50%] mx-auto'>
             <div className='sf-font'>
-              <h1 className='text-[36px] font-bold'>Download now</h1>
+              <h1 className='md:text-[36px] text-[20px] font-bold'>Download now</h1>
               <p className='text-[12px] md:text-[14px] lg:text-[17px]'>To have a better experience download our app</p>
             </div>
 

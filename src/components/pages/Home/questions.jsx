@@ -59,7 +59,7 @@ const FAQ = () => {
         {faqs.map((item, index) => (
           <div
             key={index}
-            className="bg-white w-[50%] mx-auto rounded-xl mb-2 p-4 shadow-sm transition-all duration-300"
+            className="bg-white lg::w-[50%] mx-auto rounded-xl mb-2 p-4 shadow-sm transition-all duration-300"
           >
             <div
               className="flex justify-between items-center cursor-pointer"

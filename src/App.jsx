@@ -22,9 +22,8 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/login" element={<Login />} />
 
-          <Route path="/registration" element={<Registration />}>
-            <Route path="started" element={<GettingStarted />} />
-          </Route>
+          <Route path="/registration" element={<Registration />} />
+          <Route path="/started" element={<GettingStarted />} />
         </Routes>
        </BrowserRouter>
     </>

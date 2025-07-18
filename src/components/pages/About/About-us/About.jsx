@@ -54,12 +54,12 @@ const About = () => {
           </div>
         </div>
 
-        <div className="bg-gradient-to-b from-[#4B9569] to-[#075A28] px-10 sf-font mb-10 pb-5">
+        <div className="bg-gradient-to-b from-[#4B9569] to-[#075A28] px-5 lg:px-10 sf-font mb-10 pb-5">
           <div className="text-white font-bold text-3xl text-center py-5">
             <h1>About Us</h1>
           </div>
-          <div className="flex items-center pl-10 py-5 gap-40 bg-white rounded-2xl">
-            <img src={Woman} className="h-[250px] w-[250px] rounded-md" />
+          <div className="lg:flex items-center lg:px-0 px-5 lg:pl-10 py-5 gap-40 bg-white rounded-2xl">
+            <img src={Woman} className="h-[250px] w-full lg:w-[250px] rounded-md" />
             <p className="w-[400px] font-semibold italic text-[#808080]">
               At LiftedCare, we’re redefining what it means to care for mental
               health in Africa. We're not just a platform; we're a movement
