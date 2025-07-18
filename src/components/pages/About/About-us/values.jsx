@@ -31,9 +31,9 @@ const values = () => {
       <div className="sf-font mb-10">
         <h1 className="text-center font-bold text-2xl mb-5">Our Values</h1>
 
-        <div className="flex gap-3 justify-center">
+        <div className="md:flex gap-3 justify-center px-5">
           {features.map((feature) => (
-            <div key={feature.id} className="border-1 border-amber-300 w-60 rounded-xl text-center p-5">
+            <div key={feature.id} className="border-1 border-amber-300 lg:w-60 w-full mb-5 md:mb-0 rounded-xl text-center p-5">
               <h1 className="font-bold pb-5 text-xl">{feature.header}</h1>
 
               <p>{feature.text}</p>

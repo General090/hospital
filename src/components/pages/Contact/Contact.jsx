@@ -12,7 +12,7 @@ const contact = () => {
             Leave us a message
           </h1>
           <div className="flex items-center gap-10 mx-10">
-            <div className="relative w-[30%]">
+            <div className="relative w-[30%] hidden md:block">
               {/* Image */}
               <img
                 src={Girl}
@@ -23,7 +23,7 @@ const contact = () => {
               <div className="absolute top-0 left-0 w-full h-full rounded-xl bg-gradient-to-b from-[#FED361]/10 via-[#FED361]/30 to-[#4B9569] z-10"></div>
             </div>
 
-            <div className="w-[60%]">
+            <div className="md:w-[60%] w-full">
               <form className="flex flex-col">
                 <div className="flex flex-col">
                   <label htmlFor="name" className="mb-2">

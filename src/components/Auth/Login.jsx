@@ -10,7 +10,7 @@ import Linkedin from "../../assets/linkedin.png";
 const Login = () => {
   return (
     <div className="sf-font">
-      <nav className="flex items-center justify-between px-[10rem] py-5">
+      <nav className="flex items-center justify-between px-5 lg:px-[10rem] py-5">
         <div className="flex items-center">
           <div className="bg-black rounded-full w-3 h-3"></div>
           <h1 className="font-bold text-xl">Lifted Care</h1>
@@ -24,8 +24,8 @@ const Login = () => {
         </Link>
       </nav>
 
-      <div className="px-20 pt-10 flex items-center gap-10 mb-14">
-        <div className="w-[30%] relative h-[60vh] rounded-t-xl overflow-hidden">
+      <div className="px-5 lg:px-20 pt-10 md:flex items-center gap-10 mb-14">
+        <div className="lg:w-[30%] md:w-[50%] relative h-[60vh] rounded-t-xl overflow-hidden mb-5 md:mb-0">
           <img
             src={GroupPeople}
             alt="Group of people"
@@ -45,7 +45,7 @@ const Login = () => {
         </div>
 
 
-        <div className="w-[50%]">
+        <div className="md:w-[50%]">
             <h1 className="mb-5 font-bold text-2xl">Login</h1>
 
             <form className="w-full">
@@ -77,9 +77,9 @@ const Login = () => {
       <LiftedCare />
 
 
-      <footer className="mt-10">
-        <div className="bg-black text-white pb-10">
-          <div className="flex w-full mx-auto pt-[5rem] gap-[15rem] items-center justify-center">
+      <footer>
+        <div className="bg-black text-white pb-10 px-5 md:px-0">
+          <div className="md:flex w-full space-y-3 md:space-y-3 mx-auto pt-[5rem] md:gap-[5rem] lg:gap-[15rem] items-center justify-center">
             <div className="flex items-center">
               <div className="bg-white rounded-full w-3 h-3"></div>
               <h1 className="font-bold text-xl">Lifted Care</h1>
@@ -97,9 +97,9 @@ const Login = () => {
             </div>
           </div>
 
-          <hr className="w-[71%] mx-auto mt-10 mb-7" />
+          <hr className="lg:w-[71%] md:mx-10 lg:mx-auto mt-10 mb-7" />
 
-          <div className="flex items-center gap-[15rem] mx-auto pl-[15%] underline">
+          <div className="flex items-center gap-[15rem] mx-auto md:pl-[15%] underline">
             <ul>
               <li>Link 1</li>
               <li>Link 2</li>

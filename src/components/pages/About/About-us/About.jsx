@@ -39,7 +39,7 @@ const About = () => {
         <div className="black-hand w-full h-[70vh] relative">
           {/* Gradient Overlay */}
           <div className="absolute inset-0 bg-gradient-to-tr from-[#FFC10733]/20 via-[#4B9569B2]/70 to-[#FFC1074D]/30 flex items-center justify-center">
-            <div className="w-[90%] md:w-[30%] mx-auto text-center sf-font text-white z-10">
+            <div className="w-[90%] md:w-[70%] lg:w-[30%] mx-auto text-center sf-font text-white z-10">
               <h1 className="text-3xl font-bold leading-snug">
                 Our mission is Personal, <br />
                 it's more than just <br /> Business.
@@ -59,8 +59,8 @@ const About = () => {
             <h1>About Us</h1>
           </div>
           <div className="lg:flex items-center lg:px-0 px-5 lg:pl-10 py-5 gap-40 bg-white rounded-2xl">
-            <img src={Woman} className="h-[250px] w-full lg:w-[250px] rounded-md" />
-            <p className="w-[400px] font-semibold italic text-[#808080]">
+            <img src={Woman} className="h-[250px] md:h-[350px] mb-5 lg:mb-0 w-full lg:w-[250px] rounded-md" />
+            <p className="lg:w-[400px] font-semibold italic text-[#808080]">
               At LiftedCare, we’re redefining what it means to care for mental
               health in Africa. We're not just a platform; we're a movement
               centered around people, purpose, and possibility.
@@ -72,7 +72,7 @@ const About = () => {
               {features.map((feature) => (
                 <div
                   key={feature.id}
-                  className="bg-white w-60 mx-auto rounded-xl p-6 text-center relative"
+                  className="bg-white lg:w-60 mx-auto rounded-xl p-6 text-center relative"
                   style={{ boxShadow: "8px 8px 20px rgba(255, 193, 7, 0.5)" }}
                 >
                   <img

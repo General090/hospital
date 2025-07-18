@@ -10,15 +10,15 @@ const Registration = () => {
   return (
     <>
       <Nav>
-        <div className="sf-font px-10 mt-10 mb-10">
-          <div className="flex items-center gap-20 mb-10">
-            <div className="w-[40%] p-10 bg-gradient-to-b from-[#FFC107] via-[#FFC107]/20 to-[#4B9569]">
+        <div className="sf-font px-5 lg:px-10 mt-10 mb-10">
+          <div className="flex items-center gap-10 lg:gap-20 mb-10">
+            <div className="lg:w-[40%] p-10 bg-gradient-to-b from-[#FFC107] via-[#FFC107]/20 to-[#4B9569] hidden md:block">
               <img src={Group3} className="w-full" />
             </div>
 
             <div className="w-full">
-              <form className="px-20">
-                <div className="flex items-center gap-10">
+              <form className="lg:px-20">
+                <div className="lg:flex items-center gap-10">
                   <div className="flex flex-col w-full">
                     <label>First Name</label>
                     <input
@@ -36,7 +36,7 @@ const Registration = () => {
                   </div>
                 </div>
 
-                <div className="flex items-center gap-10">
+                <div className="lg:flex items-center gap-10">
                   <div className="flex flex-col w-full">
                     <label>Phone Number</label>
                     <input

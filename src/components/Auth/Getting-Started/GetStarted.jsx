@@ -8,8 +8,8 @@ const GetStarted = () => {
   return (
     <Nav>
       <div className="sf-font mb-20">
-        <div className="flex items-center gap-10 justify-center mb-20 mt-10">
-          <div className="w-[30%] relative h-[60vh] rounded-t-xl overflow-hidden">
+        <div className="md:flex items-center gap-10 justify-center px-5 md:px-5 mb-20 mt-10">
+          <div className="lg:w-[30%] md:w-[50%] mb-5 md:mb-0 relative h-[60vh] rounded-t-xl overflow-hidden">
             <img
               src={Shake}
               alt="Group of people"
@@ -29,7 +29,7 @@ const GetStarted = () => {
           </div>
 
 
-          <div className="w-[30%] relative h-[60vh] rounded-t-xl overflow-hidden">
+          <div className="lg:w-[30%] md:w-[50%] relative h-[60vh] rounded-t-xl overflow-hidden">
             <img
               src={Target}
               alt="Group of people"
