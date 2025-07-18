@@ -56,35 +56,35 @@ const webinar = () => {
           <h1>Upcoming Events & Webinars</h1>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-5 pt-5 pb-10 px-5 lg:px-20 text-white">
-              {features.map((feature) => (
-                <div
-                  key={feature.id}
-                  className="mx-auto"
-                >
-                  <img
-                    src={feature.image}
-                    className="rounded-t-xl"
-                  />
-                  <div className="bg-[#FED361] p-5">
-                    <h3 className="text-sm font-semibold mb-2">
-                      {feature.header}
-                    </h3>
-                    <div className="flex items-center gap-2 text-red-600">
-                      <div>
-                      <IoLocationSharp />
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-5 pt-5 pb-10 px-5 lg:px-20 text-white">
+                {features.map((feature) => (
+                  <div
+                    key={feature.id}
+                    className="mx-auto"
+                  >
+                    <img
+                      src={feature.image}
+                      className="rounded-t-xl"
+                    />
+                    <div className="bg-[#FED361] p-5">
+                      <h3 className="text-sm font-semibold mb-2">
+                        {feature.header}
+                      </h3>
+                      <div className="flex items-center gap-2 text-red-600">
+                        <div>
+                        <IoLocationSharp />
+                        </div>
+
+                        <p className="text-white text-sm">{feature.location}</p>
                       </div>
 
-                      <p className="text-white text-sm">{feature.location}</p>
-                    </div>
-
-                    <div className="flex items-center justify-between">
-                      <p>{feature.date}</p>
-                      <p>{feature.available}</p>
+                      <div className="flex items-center justify-between">
+                        <p>{feature.date}</p>
+                        <p>{feature.available}</p>
+                      </div>
                     </div>
                   </div>
-                </div>
-              ))}
+                ))}
           </div>
 
           <div className="flex items-center gap-2 px-20 justify-end font-bold text-2xl mb-10">

@@ -1,3 +1,6 @@
 .people {
     background-image: url('../../../../assets/group-people.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }

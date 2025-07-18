@@ -36,7 +36,7 @@ const About = () => {
   return (
     <Nav>
       <>
-        <div className="black-hand w-full h-[70vh] relative">
+        <div className="black-hand w-full h-[70vh] sf-font relative">
           {/* Gradient Overlay */}
           <div className="absolute inset-0 bg-gradient-to-tr from-[#FFC10733]/20 via-[#4B9569B2]/70 to-[#FFC1074D]/30 flex items-center justify-center">
             <div className="w-[90%] md:w-[70%] lg:w-[30%] mx-auto text-center sf-font text-white z-10">
