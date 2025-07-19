@@ -3,13 +3,14 @@ import Nav from "../../layouts/nav";
 import Shake from "../../../assets/shake.png"
 import Target from "../../../assets/target.png"
 import LiftedCare from "../../Props/LiftedCare/LiftedCare"
+import { Link } from "react-router-dom";
 
 const GetStarted = () => {
   return (
     <Nav>
       <div className="sf-font mb-20">
         <div className="md:flex items-center gap-10 justify-center px-5 md:px-5 mb-20 mt-10">
-          <div className="lg:w-[30%] md:w-[50%] mb-5 md:mb-0 relative h-[60vh] rounded-t-xl overflow-hidden">
+          <Link to="/menu-intro" className="lg:w-[30%] md:w-[50%] mb-5 md:mb-0 relative h-[60vh] rounded-t-xl overflow-hidden">
             <img
               src={Shake}
               alt="Group of people"
@@ -26,10 +27,10 @@ const GetStarted = () => {
                 Gain access to all premium content, access our AI Companion and lots of more...
               </p>
             </div>
-          </div>
+          </Link>
 
 
-          <div className="lg:w-[30%] md:w-[50%] relative h-[60vh] rounded-t-xl overflow-hidden">
+          <Link to="/menu-intro" className="lg:w-[30%] md:w-[50%] relative h-[60vh] rounded-t-xl overflow-hidden">
             <img
               src={Target}
               alt="Group of people"
@@ -46,7 +47,7 @@ const GetStarted = () => {
                 Gain access to all premium content, access our AI Companion and lots of more...
               </p>
             </div>
-          </div>
+          </Link>
         </div>
 
         <LiftedCare />

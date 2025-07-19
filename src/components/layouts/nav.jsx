@@ -68,7 +68,7 @@ const nav = ({ children }) => {
         </div>
       </nav>
 
-      {/* ✅ Mobile Menu */}
+      {/*  Mobile Menu */}
       {isOpen && (
         <div className="md:hidden px-5 py-4 bg-white shadow space-y-3">
           <Link to="/" onClick={handleClick} className="block text-gray-700">

@@ -8,6 +8,10 @@ import Registration from './components/Auth/Getting-Started/Registration.jsx'
 import OurStory from './components/pages/About/Story/ourStory.jsx'
 import Login from './components/Auth/Login.jsx'
 import GettingStarted from './components/Auth/Getting-Started/GetStarted.jsx'
+import MenuIntro from './components/pages/menu/intro/Intro.jsx'
+import MenuHome from './components/pages/menu/home/Home.jsx'
+import Features from './components/pages/menu/features/Features.jsx'
+import Theraphy from './components/pages/menu/features/theraphy/Theraphy.jsx'
 
 
 function App() {
@@ -22,8 +26,17 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/login" element={<Login />} />
 
+          {/* Registration and Getting Started */}
           <Route path="/registration" element={<Registration />} />
           <Route path="/started" element={<GettingStarted />} />
+
+          {/* Menu */}
+          <Route path="/menu-intro" element={<MenuIntro />} />
+          <Route path="/menu-home" element={<MenuHome />} />
+          <Route path="/menu-features" element={<Features />} />
+
+          {/* Features */}
+          <Route path="/therapy" element={<Theraphy />} />
         </Routes>
        </BrowserRouter>
     </>

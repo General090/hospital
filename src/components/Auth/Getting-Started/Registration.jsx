@@ -4,6 +4,7 @@ import Group3 from "../../../assets/Group-3.png";
 import LiftedCare from "../../Props/LiftedCare/LiftedCare";
 import { Link } from "react-router-dom";
 
+
 const Registration = () => {
   const [selectedDate, setSelectedDate] = useState("");
 

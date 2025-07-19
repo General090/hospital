@@ -1,6 +1,13 @@
 @import "tailwindcss";
 
 .sf-font{
-  font-family: 'SF Pro Display', sans-serif;
-                                                
+  font-family: 'SF Pro Display', sans-serif;                                               
+}
+
+.jarkata{
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.roboto{
+  font-family: 'Roboto', sans-serif;
 }
