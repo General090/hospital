@@ -12,7 +12,8 @@ import MenuIntro from './components/pages/menu/intro/Intro.jsx'
 import MenuHome from './components/pages/menu/home/Home.jsx'
 import Features from './components/pages/menu/features/Features.jsx'
 import Theraphy from './components/pages/menu/features/theraphy/Theraphy.jsx'
-import Schedule from './components/pages/menu/features/theraphy/schedule.jsx'
+import Schedule from './components/pages/menu/features/theraphy/schedule/schedule.jsx'
+import ScheduleDone from "./components/pages/menu/features/theraphy/schedule/ScheduleDone.jsx";
 
 
 function App() {
@@ -39,6 +40,7 @@ function App() {
           {/* Features */}
           <Route path="/theraphy" element={<Theraphy />} />
           <Route path="/theraphy-schedule" element={<Schedule />} />
+          <Route path="/done" element={<ScheduleDone />} />
         </Routes>
        </BrowserRouter>
     </>
