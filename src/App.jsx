@@ -14,6 +14,8 @@ import Features from './components/pages/menu/features/Features.jsx'
 import Theraphy from './components/pages/menu/features/theraphy/Theraphy.jsx'
 import Schedule from './components/pages/menu/features/theraphy/schedule/schedule.jsx'
 import ScheduleDone from "./components/pages/menu/features/theraphy/schedule/ScheduleDone.jsx";
+import Article from './components/pages/menu/features/article/article.jsx'
+import Settings from './components/pages/menu/settings/Settings.jsx'
 
 
 function App() {
@@ -36,11 +38,17 @@ function App() {
           <Route path="/menu-intro" element={<MenuIntro />} />
           <Route path="/menu-home" element={<MenuHome />} />
           <Route path="/menu-features" element={<Features />} />
+          <Route path="/menu-settings" element={<Settings />} />
 
           {/* Features */}
           <Route path="/theraphy" element={<Theraphy />} />
           <Route path="/theraphy-schedule" element={<Schedule />} />
           <Route path="/done" element={<ScheduleDone />} />
+
+
+          {/* Article */}
+          <Route path="/article" element={<Article />} />
+
         </Routes>
        </BrowserRouter>
     </>

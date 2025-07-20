@@ -29,7 +29,7 @@ const MenuLayout = ({ children }) => {
         <div className='md:flex items-center gap-10 hidden'>
           <div className='flex items-center gap-2'>
             <IoMdMenu className='text-[#FFC107]'/>
-            <Link to="/">Menu</Link>
+            <Link to="/menu-intro">Menu</Link>
           </div>
 
           <div className='flex items-center gap-2'>
@@ -39,11 +39,11 @@ const MenuLayout = ({ children }) => {
 
           <div className='flex items-center gap-2'>
             <IoSettingsOutline className='text-[#FFC107]' />
-            <Link to="/">Setting</Link>
+            <Link to="/menu-settings">Settings</Link>
           </div>
 
           <div className='flex items-center gap-2'>
-            <Link to="/">Logout</Link>
+            <Link to="/login">Logout</Link>
             <IoIosLogOut className='text-[#FFC107]' />
           </div>
         </div>
@@ -63,11 +63,11 @@ const MenuLayout = ({ children }) => {
 
       {isOpen && (
         <div className="md:hidden flex flex-col px-5 py-4 bg-white shadow space-y-3">
-            <Link to="/">Menu</Link>
+            <Link to="/menu-intro">Menu</Link>
 
             <Link to="/">Notification</Link>
 
-            <Link to="/">Setting</Link>
+            <Link to="/menu-settings">Settings</Link>
 
             <Link to="/login">Logout</Link>
         </div>

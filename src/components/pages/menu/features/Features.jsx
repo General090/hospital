@@ -19,7 +19,7 @@ const Features = () => {
         { id: 1, image: Meditation, title: "Meditaion" },
         { id: 2, image: Theraphy, title: "Theraphy", path: "/theraphy" },
         { id: 3, image: Journal, title: "Journal" },
-        { id: 4, image: Article, title: "Articles" },
+        { id: 4, image: Article, title: "Articles", path: "/article" },
         { id: 5, image: Music, title: "Music" },
         { id: 6, image: Webiner, title: "Webiners" },
         { id: 7, image: Games, title: "Games" },
