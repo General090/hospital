@@ -65,7 +65,7 @@ const MenuLayout = ({ children }) => {
         <div className="md:hidden flex flex-col px-5 py-4 bg-white shadow space-y-3">
             <Link to="/menu-intro">Menu</Link>
 
-            <Link to="/">Notification</Link>
+            <Link to="/menu-notification">Notification</Link>
 
             <Link to="/menu-settings">Settings</Link>
 

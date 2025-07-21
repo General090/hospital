@@ -16,6 +16,7 @@ import Schedule from './components/pages/menu/features/theraphy/schedule/schedul
 import ScheduleDone from "./components/pages/menu/features/theraphy/schedule/ScheduleDone.jsx";
 import Article from './components/pages/menu/features/article/article.jsx'
 import Settings from './components/pages/menu/settings/Settings.jsx'
+import Notification from './components/pages/menu/notification/Notification.jsx'
 
 
 function App() {
@@ -39,6 +40,7 @@ function App() {
           <Route path="/menu-home" element={<MenuHome />} />
           <Route path="/menu-features" element={<Features />} />
           <Route path="/menu-settings" element={<Settings />} />
+          <Route path="/menu-notification" element={<Notification />} />
 
           {/* Features */}
           <Route path="/theraphy" element={<Theraphy />} />
