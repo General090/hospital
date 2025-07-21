@@ -7,7 +7,7 @@ const Intro = () => {
   return (
     <MenuLayout>
       <div className="mt-10 jarkata md:flex items-center gap-10 px-5 lg:px-10">
-        <div className="w-[20%] md:w-[100%] lg:w-[30%] relative h-[50vh] rounded-t-xl overflow-hidden mb-5 md:mb-0">
+        <div className="w-full md:w-[100%] lg:w-[30%] relative h-[50vh] rounded-t-xl overflow-hidden mb-5 md:mb-0">
           <img
             src={GroupPeople}
             alt="Group of people"

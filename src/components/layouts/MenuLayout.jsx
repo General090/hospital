@@ -34,7 +34,7 @@ const MenuLayout = ({ children }) => {
 
           <div className='flex items-center gap-2'>
             <IoMdNotificationsOutline className='text-[#FFC107]' />
-            <Link to="/">Notification</Link>
+            <Link to="/menu-notification">Notification</Link>
           </div>
 
           <div className='flex items-center gap-2'>
