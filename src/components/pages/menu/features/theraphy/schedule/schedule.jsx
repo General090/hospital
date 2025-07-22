@@ -80,7 +80,7 @@ const schedule = () => {
             <Link to="/theraphy" className="bg-[#4B9569] text-white py-2 text-center w-[13%] rounded">
               Back
             </Link>
-            <Link to="/done" className="bg-[#4B9569] text-white py-2 text-center w-[13%] rounded">
+            <Link to="/theraphy-done" className="bg-[#4B9569] text-white py-2 text-center w-[13%] rounded">
               Continue
             </Link>
           </div>
