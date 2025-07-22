@@ -18,6 +18,7 @@ import Article from './components/pages/menu/features/article/article.jsx'
 import Settings from './components/pages/menu/settings/Settings.jsx'
 import Notification from './components/pages/menu/notification/Notification.jsx'
 import Journal from './components/pages/menu/features/journal/Journal.jsx'
+import JournalWritten from './components/pages/menu/features/journal/JournalWritten.jsx'
 
 
 function App() {
@@ -48,6 +49,7 @@ function App() {
           <Route path="/theraphy-schedule" element={<Schedule />} />
           <Route path="/theraphy-done" element={<ScheduleDone />} />
           <Route path='/journal' element={<Journal />} />
+          <Route path='/journal-written' element={<JournalWritten />} />
 
 
           {/* Article */}
