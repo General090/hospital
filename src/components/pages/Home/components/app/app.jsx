@@ -39,7 +39,7 @@ const app = () => {
               lack of awareness, and limited resources contribute to this gap,
               leaving many individuals struggling in silence.
             </p>
-            <button className="bg-white text-green-900 px-4 py-2 rounded-lg shadow-md hover:bg-gray-200 transition">
+            <button className="bg-gradient-to-br w-72 rounded-full from-[#60b454] to-[#ffdd55] text-white px-4 py-2 shadow-md transition">
               Learn More
             </button>
           </div>

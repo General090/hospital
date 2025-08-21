@@ -1,12 +1,12 @@
 import React from "react";
 // import "./home.css";
-import Nav from "../../layouts/nav.jsx";
-// import Img1 from "../../../assets/img1.png";
-import Image from "../../../assets/image.png";
-import App from "./components/app/app.jsx";
-import Operate from "./components/operate.jsx";
-import Download from "./components/download.jsx";
-import Table from "./components/table.jsx";
+import Nav from "../../../../layouts/nav.jsx";
+import Image from "../../../../../assets/image.png";
+import App from "../app/app.jsx";
+import Operate from "../operate.jsx";
+import Download from "../download.jsx";
+import Health from "../../health.jsx"
+import Table from "../table.jsx";
 import { Link } from "react-router-dom";
 
 const Home = () => {
@@ -49,6 +49,7 @@ const Home = () => {
       </section>
 
       <App />
+      <Health />
       <Operate />
       <Download />
       <Table />
