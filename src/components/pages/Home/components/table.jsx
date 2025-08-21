@@ -1,5 +1,5 @@
-import React from 'react';
-import { FaCheckCircle, FaTimesCircle } from 'react-icons/fa';
+import React from "react";
+import { FaCheckCircle, FaTimesCircle } from "react-icons/fa";
 
 const ComparisonTable = () => {
   const features = [
@@ -13,22 +13,52 @@ const ComparisonTable = () => {
     "Group sessions & webinars",
     "Engaging/Fun tasks and challenges",
     "Meditation content",
-    "Anonymous peer group support"
+    "Anonymous peer group support",
   ];
 
-  const liftedCareFeatures = [true, true, true, true, true, true, true, true, true, true, true];
-  const traditionalFeatures = [true, true, false, false, false, false, false, false, false, false, false];
+  const liftedCareFeatures = [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+  ];
+  const traditionalFeatures = [
+    true,
+    true,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+  ];
 
   return (
-    <div className="bg-[#4B9569] py-16 text-white">
-      <div className="text-center mb-10 px-4">
-        <h1 className="text-[25px] font-bold">Lifted care Vs traditional in-office therapy</h1>
-        <p>What Makes Us Exceptional</p>
+    <div className="py-16 text-white">
+      <div className="text-black">
+        <div className="text-center mb-10 px-4">
+          <h1 className="text-[25px] font-bold">
+            Lifted care Vs traditional in-office therapy
+          </h1>
+          <p>What Makes Us Exceptional</p>
+        </div>
       </div>
 
-      <div className="max-w-6xl mx-auto px-4">
+      <div className="max-w-6xl mx-auto px-4 bg-[#4B9569]">
         {/* Table headers */}
-        <div className="py-3 flex justify-end border-b text-black border-yellow-400 pr-30">Traditional Therapist</div>
+        <div className="py-3 flex justify-end border-b text-black border-yellow-400 pr-30">
+          Traditional Therapist
+        </div>
 
         {/* Table rows */}
         {features.map((feature, i) => (
@@ -48,7 +78,6 @@ const ComparisonTable = () => {
                   <FaTimesCircle className="text-red-400" />
                 )}
               </div>
-
             </div>
 
             {/* Traditional Therapist */}

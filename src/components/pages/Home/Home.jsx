@@ -1,59 +1,57 @@
 import React from "react";
-import "./home.css";
+// import "./home.css";
 import Nav from "../../layouts/nav.jsx";
-import Img1 from "../../../assets/img1.png";
-import Operate from "../Home/operate.jsx";
-import Download from "../Home/download.jsx";
-import Table from "../Home/table.jsx";
-import Questions from "../Home/questions.jsx";
+// import Img1 from "../../../assets/img1.png";
+import Image from "../../../assets/image.png";
+import App from "./components/app/app.jsx";
+import Operate from "./components/operate.jsx";
+import Download from "./components/download.jsx";
+import Table from "./components/table.jsx";
 import { Link } from "react-router-dom";
-import LearnMore from "../../Props/Button/LearnMore";
 
 const Home = () => {
   return (
     <Nav>
-      <div className="sf-font">
-        <div className="md:pl-10 pl-5 lg:pt-52 pt-60 image h-[60vh] md:h-[70vh] lg:h-[80vh] w-full">
-          {/* <div className="h-screen flex items-center justify-center"> */}
-            <div className="lg:w-[30%] md:w-[60%] space-y-4 text-white">
-              <h1 className="font-bold text-3xl">
-                Your Journey to Wellness Stay Here
-              </h1>
-              <p>
-                Personalized therapy, culturally aware support, and intelligent
-                tools at your fingertips.
-              </p>
-              <LearnMore />
-            {/* </div> */}
-          </div>
-        </div>
-
-        <div className="md:flex items-center py-5 md:w-[80%] lg:w-[50%] px-5 md:px-0 md:mx-auto gap-10">
-          {/* Mobile-only Image */}
-          <img src={Img1} className="w-full rounded-md block md:hidden mb-5" />
-
-          <div className="flex flex-col gap-5">
-            <p>
-              Our platform combines expert care, AI-driven tools, and a
-              supportive community to help you heal, grow, and live fully.
+      <section className="bg-[#237644] text-white sf-font">
+        <div className="max-w-7xl mx-auto px-6 py-10 md:py-0 grid grid-cols-1 md:grid-cols-2 items-center gap-8">
+          {/* Left side */}
+          <div>
+            <h1 className="text-4xl md:text-5xl font-bold leading-tight">
+              Your Journey to Wellness Starts Here
+            </h1>
+            <p className="mt-4 mb-10 text-lg text-white/80 max-w-md">
+              Personalized therapy, culturally aware support, and intelligent
+              tools at your fingertips.
             </p>
             <Link
-              to="/registration"
-              className="bg-gradient-to-b from-[#FFC107] to-[#4B9569] px-4 py-2 text-white rounded-sm w-[30%] md:w-[35%] lg:w-[32%]"
+              to="/contact"
+              className="mt-6 px-6 py-3 bg-[#FFC107] text-white font-semibold rounded-md shadow-md hover:bg-yellow-500 transition"
             >
-              Get Started
+              Contact Us
             </Link>
           </div>
 
-          {/* Desktop-only Image */}
-          <img src={Img1} className="w-[40%] rounded-md hidden md:block" />
-        </div>
-      </div>
+          {/* Right side */}
+          <div className="hidden md:block">
+            <div className="relative flex justify-center items-center">
+              {/* Gradient glow */}
+              <div className="absolute w-72 h-72 bg-gradient-to-br from-yellow-400 via-green-500 to-green-700 rounded-full blur-3xl"></div>
 
+              {/* Image */}
+              <img
+                src={Image}
+                alt="LiftedCare"
+                className="relative z-10 w-80 md:w-[28rem] object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <App />
       <Operate />
       <Download />
       <Table />
-      <Questions />
     </Nav>
   );
 };

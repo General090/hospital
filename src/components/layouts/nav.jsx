@@ -4,10 +4,11 @@ import FaceBook from "../../assets/facebook.png";
 import Instagram from "../../assets/instagram.png";
 import Twitter from "../../assets/twitter.png";
 import Linkedin from "../../assets/linkedin.png";
-import { IoMdMenu, IoMdClose } from "react-icons/io"; // ✅ Add close icon
+import { IoMdMenu, IoMdClose } from "react-icons/io";
+import Logo from "../../assets/Logo.png"
 
 const nav = ({ children }) => {
-  const [isOpen, setIsOpen] = useState(false); // ✅ Toggle state
+  const [isOpen, setIsOpen] = useState(false);
   const [showMobileAbout, setShowMobileAbout] = useState(false);
 
   const handleClick = () => {
@@ -16,11 +17,8 @@ const nav = ({ children }) => {
 
   return (
     <div>
-      <nav className="flex items-center justify-between px-5 lg:px-[10rem] sticky top-0 z-50 bg-white shadow py-5">
-        <div className="flex items-center">
-          <div className="bg-black rounded-full w-3 h-3"></div>
-          <h1 className="font-bold md:text-xl">Lifted Care</h1>
-        </div>
+      <nav className="flex items-center justify-between px-5 lg:px-[5rem] sticky top-0 z-50 bg-white shadow py-5">
+        <img src={Logo} className="w-40 md:w-[15%]" />
 
         <div className="hidden md:flex">
           <div className="flex items-center gap-5 text-gray-500 ">
