@@ -17,9 +17,12 @@ const operate = () => {
 
         <div className="md:flex items-center gap-[20%] lg:w-[70%] md:mx-auto px-5 lg:px-0">
           <div className="flex gap-5 ">
-            <img src={Woman2} className="w-25 h-60 object-cover mt-10 rounded-md" />
-            <img src={Casual} className="w-25 h-60 object-cover rounded-md" />
-            <img src={Man2} className="w-25 h-60 object-cover mt-10 rounded-md" />
+            <img src={Woman2} className="w-25 h-60 object-cover mt-10 rounded-md shadow-[0_8px_30px_0_rgba(255,200,36,0.8)]
+" />
+            <img src={Casual} className="w-25 h-60 object-cover rounded-md shadow-[0_8px_30px_0_rgba(255,200,36,0.8)]
+" />
+            <img src={Man2} className="w-25 h-60 object-cover mt-10 rounded-md shadow-[0_8px_30px_0_rgba(255,200,36,0.8)]
+" />
           </div>
 
           <div className="text-black">

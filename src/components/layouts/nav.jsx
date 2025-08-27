@@ -1,11 +1,16 @@
-import React, { useState } from "react"; // ✅ Add useState
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import FaceBook from "../../assets/facebook.png";
 import Instagram from "../../assets/instagram.png";
 import Twitter from "../../assets/twitter.png";
 import Linkedin from "../../assets/linkedin.png";
 import { IoMdMenu, IoMdClose } from "react-icons/io";
+import { FiPhone } from "react-icons/fi";
+import { CiMail } from "react-icons/ci";
 import Logo from "../../assets/Logo.png"
+import { BiLogoPlayStore } from "react-icons/bi";
+import { FaApple } from "react-icons/fa";
+
 
 const nav = ({ children }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -128,10 +133,7 @@ const nav = ({ children }) => {
       <footer>
         <div className="bg-black text-white pb-10 px-5 md:px-0">
           <div className="md:flex w-full space-y-3 md:space-y-3 mx-auto pt-[5rem] md:gap-[5rem] lg:gap-[15rem] items-center justify-center">
-            <div className="flex items-center">
-              <div className="bg-white rounded-full w-3 h-3"></div>
-              <h1 className="font-bold text-xl">Lifted Care</h1>
-            </div>
+            <img src={Logo} className="w-40 md:w-[15%]" />
 
             <div>
               <p>@2025 CompanyName INC</p>
@@ -145,26 +147,37 @@ const nav = ({ children }) => {
             </div>
           </div>
 
-          <hr className="lg:w-[71%] md:mx-10 lg:mx-auto mt-10 mb-7" />
+          <hr className="lg:w-[71%] md:mx-10 lg:mx-auto text-[#FFC107] mt-10 mb-7" />
 
-          <div className="flex items-center gap-[15rem] mx-auto md:pl-[15%] underline">
-            <ul>
-              <li>Link 1</li>
-              <li>Link 2</li>
-              <li>Link 3</li>
-            </ul>
+          <div className="md:flex space-y-5 items-center gap-[15rem] mx-auto md:pl-[15%]">
+            <div className="space-y-4">
+              <h2>Contact Us</h2>
 
-            <ul>
-              <li>Link 1</li>
-              <li>Link 2</li>
-              <li>Link 3</li>
-            </ul>
+              <div className="flex items-center gap-2">
+                <CiMail />
+                <p>liftedcarehealth@gmail.com</p>
+              </div>
 
-            <ul>
-              <li>Link 1</li>
-              <li>Link 2</li>
-              <li>Link 3</li>
-            </ul>
+              <div className="flex items-center gap-2">
+                <FiPhone />
+                <p>liftedcarehealth@gmail.com</p>
+              </div>
+            </div>
+
+
+            <div className="space-y-4 underline">
+              <h2>Download app</h2>
+
+              <div className="flex items-center gap-2">
+                <p>Click here</p>
+                <BiLogoPlayStore />
+              </div>
+
+              <div className="flex items-center gap-2">
+                <p>Click here</p>
+                <FaApple />
+              </div>
+            </div>
           </div>
         </div>
       </footer>
