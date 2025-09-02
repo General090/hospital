@@ -19,6 +19,7 @@ import Settings from './components/pages/menu/settings/Settings.jsx'
 import Notification from './components/pages/menu/notification/Notification.jsx'
 import Journal from './components/pages/menu/features/journal/Journal.jsx'
 import JournalWritten from './components/pages/menu/features/journal/JournalWritten.jsx'
+import Congrats from './components/Auth/Getting-Started/Congrats.jsx'
 
 
 function App() {
@@ -36,6 +37,7 @@ function App() {
           {/* Registration and Getting Started */}
           <Route path="/registration" element={<Registration />} />
           <Route path="/started" element={<GettingStarted />} />
+          <Route path="/congrats" element={<Congrats />} />
 
           {/* Menu */}
           <Route path="/menu-intro" element={<MenuIntro />} />

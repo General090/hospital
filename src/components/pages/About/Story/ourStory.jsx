@@ -33,14 +33,14 @@ const ourStory = () => {
             <h1>Our Story</h1>
         </div>
 
-        <div className="flex items-center gap-10 justify-center py-10">
-          <div className="w-[40%]">
+        <div className="md:flex items-center gap-10 justify-center py-10 px-5">
+          <div className="w-full md:w-[40%] mb-5 md:mb-0">
             <h1 className="font-bold font-2xl">Our Mission is Personal</h1>
             <p>To deliver compassionate, culturally relevant, and tech-enabled mental health care that lifts lives, one conversation, one connection, one community at a time.</p>
           </div>
 
           <div>
-            <img src={Kat} className="w-60" />
+            <img src={Kat} className="w-full md:w-60" />
           </div>
         </div>
         

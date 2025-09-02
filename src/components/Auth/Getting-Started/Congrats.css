@@ -1,0 +1,10 @@
+.background {
+    background-image: url("../../../assets/girls.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 40%;
+    height: 100%;
+    margin: auto;
+  }
+  

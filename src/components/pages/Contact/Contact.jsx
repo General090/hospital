@@ -1,7 +1,8 @@
 import React from "react";
 import Nav from "../../layouts/nav";
-import Girl from "../../../assets/girl.png";
+import Mock from "../../../assets/mock.png";
 import ContactUs from "../Contact/ContactUs"
+import Questions from "../Contact/questions"
 
 const contact = () => {
   return (
@@ -15,12 +16,9 @@ const contact = () => {
             <div className="relative w-[30%] hidden md:block">
               {/* Image */}
               <img
-                src={Girl}
-                className="w-full h-auto rounded-xl object-cover"
+                src={Mock}
+                className="w-full h-[50vh] rounded-xl object-cover"
               />
-
-              {/* Gradient overlay */}
-              <div className="absolute top-0 left-0 w-full h-full rounded-xl bg-gradient-to-b from-[#FED361]/10 via-[#FED361]/30 to-[#4B9569] z-10"></div>
             </div>
 
             <div className="md:w-[60%] w-full">
@@ -68,6 +66,7 @@ const contact = () => {
         </div>
 
         <ContactUs />
+        <Questions />
       </>
     </Nav>
   );

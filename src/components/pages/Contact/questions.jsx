@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { FaChevronDown, FaChevronUp } from 'react-icons/fa';
+import React, { useState } from "react";
+import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 
 const faqs = [
   {
@@ -34,13 +34,12 @@ const faqs = [
   },
   {
     question: "How do I contact the Lifted Health care support team?",
-    answer:
-      "Through our call centre, email or contact form.",
+    answer: "Through our call centre, email or contact form.",
   },
   {
-    question: "If I'm a qualified therapist. How can I provide services using LiftedCare?",
-    answer:
-      "Please start the application process by clicking here.",
+    question:
+      "If I'm a qualified therapist. How can I provide services using LiftedCare?",
+    answer: "Please start the application process by clicking here.",
   },
 ];
 
@@ -54,7 +53,9 @@ const FAQ = () => {
   return (
     <section className="bg-[#FED36180] py-16 px-4 sf-font">
       <div className="mx-auto">
-        <h2 className="text-center text-2xl font-bold mb-10">Frequency asked questions</h2>
+        <h2 className="text-center text-2xl font-bold mb-10">
+          Frequency asked questions
+        </h2>
 
         {faqs.map((item, index) => (
           <div
@@ -66,15 +67,19 @@ const FAQ = () => {
               onClick={() => toggle(index)}
             >
               <h3 className="font-semibold mb-5">{item.question}</h3>
-              {openIndex === index ? (
-                <FaChevronUp className="text-yellow-400" />
-              ) : (
-                <FaChevronDown className="text-yellow-400" />
-              )}
+              <div className="bg-yellow-400 rounded-full w-7 h-7 flex items-center justify-center">
+                {openIndex === index ? (
+                  <FaChevronUp className="text-white" />
+                ) : (
+                  <FaChevronDown className="text-white" />
+                )}
+              </div>
             </div>
 
             {openIndex === index && (
-              <div className="mt-3 text-sm whitespace-pre-line">{item.answer}</div>
+              <div className="mt-3 text-sm whitespace-pre-line">
+                {item.answer}
+              </div>
             )}
           </div>
         ))}

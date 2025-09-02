@@ -6,8 +6,11 @@ import "./app.css";
 const app = () => {
   return (
     <div className="sf-font">
-      <div className="flex items-center justify-between gap-10 my-10 w-[50%] mx-auto">
+      <div className="flex items-center justify-between gap-10 my-10 w-full md:w-[50%] md:mx-auto px-5 md:px-0">
         <div>
+          <div className="block md:hidden mb-5 md:mb-0">
+            <img src={Mock} className="w-96  rounded-md" />
+          </div>
           <p className="pb-5">
             Our platform combines expert care, AI-driven tools, and a supportive
             community to help you heal, grow, and live fully.
@@ -17,7 +20,7 @@ const app = () => {
           </Link>
         </div>
 
-        <div>
+        <div className="hidden md:block">
           <img src={Mock} className="w-96 rounded-md" />
         </div>
       </div>
@@ -44,7 +47,7 @@ const app = () => {
             </button>
           </div>
 
-          <div className="space-y-6">
+          <div className="space-y-6 hidden md:block">
             <div className="flex gap-6">
               <div className="max-w-xs text-center px-2 py-5 mt-20 w-[40%] rounded-xl bg-white">
                 <h1 className="text-xl font-semibold text-black">Prevalence</h1>

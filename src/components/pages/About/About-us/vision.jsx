@@ -25,7 +25,7 @@ const vision = () => {
         </div>
 
         <div>
-          <h1 className="font-bold text-2xl mb-5">Vision</h1>
+          <h1 className="font-bold text-2xl mb-5 mt-10 md:mt-0">Vision</h1>
           <p>
           We envision a future where every youth in every community has access to tailored mental health services.
           </p>
@@ -44,7 +44,7 @@ const vision = () => {
           </p>
         </div>
 
-        <div className="lg:w-[70%] md:w-[80%] mx-auto md:mx-0">
+        <div className="lg:w-[70%] md:w-[80%] mx-auto md:mx-0 mt-10 md:mt-0">
           <img src={People} className="rounded-xl" />
         </div>
       </div>

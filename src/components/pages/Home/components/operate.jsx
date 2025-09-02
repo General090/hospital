@@ -25,7 +25,7 @@ const operate = () => {
 " />
           </div>
 
-          <div className="text-black">
+          <div className="text-black mt-10 md:mt-0">
             <h1 className="font-bold text-xl md:text-xl lg:text-xl pb-5">
               Get Matched with professional therapist
             </h1>

@@ -3,10 +3,12 @@ import Nav from "../../layouts/nav";
 import Group3 from "../../../assets/Group-3.png";
 import LiftedCare from "../../Props/LiftedCare/LiftedCare";
 import { Link } from "react-router-dom";
-
+import { DateInput } from "@mantine/dates";
+import "@mantine/core/styles.css";
+import "@mantine/dates/styles.css";
 
 const Registration = () => {
-  const [selectedDate, setSelectedDate] = useState("");
+  const [value, setValue] = useState(null);
 
   return (
     <>
@@ -47,12 +49,21 @@ const Registration = () => {
                   </div>
 
                   <div className="flex flex-col w-full">
-                    <label>Date of Birth</label>
-                    <input
-                      type="date"
-                      value={selectedDate}
-                      onChange={(e) => setSelectedDate(e.target.value)}
-                      className="border-1 border-[#faefce] bg-[#f5f5f5] mb-5 pl-2 pr-17 py-1 rounded outline-none"
+                    <label className="mb-1">Date of Birth</label>
+                    <DateInput
+                      value={value}
+                      onChange={setValue}
+                      styles={{
+                        input: {
+                          border: "1px solid #faefce",
+                          backgroundColor: "#f5f5f5",
+                          padding: "0.25rem 0.5rem",
+                          borderRadius: "0.375rem",
+                          outline: "none",
+                          width: "100%",
+                          marginBottom: "1.25rem",
+                        },
+                      }}
                     />
                   </div>
                 </div>
