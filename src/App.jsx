@@ -1,5 +1,7 @@
 import react from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import About from './components/pages/About/About-us/About.jsx'
 import Home from './components/pages/Home/components/home/Home.jsx'
 import Webinar from './components/pages/Webinar/Webinar.jsx'
@@ -25,6 +27,18 @@ import Congrats from './components/Auth/Getting-Started/Congrats.jsx'
 function App() {
   return (
     <>
+    <ToastContainer 
+        position="top-right" 
+        autoClose={3000} 
+        hideProgressBar={false} 
+        newestOnTop={false} 
+        closeOnClick 
+        rtl={false} 
+        pauseOnFocusLoss 
+        draggable 
+        pauseOnHover
+        theme="colored"
+      />
        <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />

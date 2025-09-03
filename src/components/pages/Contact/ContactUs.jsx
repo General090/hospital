@@ -7,8 +7,8 @@ import Linkedin from "../../../assets/linkedin.png"
 const ContactUs = () => {
   return (
     <>
-      <div className="flex items-center justify-between mx-60 my-20">
-        <div className="text-center">
+      <div className="md:flex items-center justify-between mx-5 md:mx-60 my-20">
+        <div className="md:text-center">
           <h1 className="font-bold text-4xl pb-2">Email</h1>
           <p>liftedcarehealth@gmail.com</p>
           <p>+234 81 0000000</p>
@@ -26,7 +26,7 @@ const ContactUs = () => {
         </div>
       </div>
 
-      <div className="mx-20 font-bold space-y-2 text-sm mb-20">
+      <div className="mx-5 md:mx-20 font-bold space-y-2 text-sm mb-20">
         <h1 className="pb-5 text-xl">For immediate crisis support for you or someone else. Do not use this site instead, use this resources provided:</h1>
         <p>Nigeria Suicide Prevention Hotline: 002341-912-5106</p>
         <p>Domestic and Sexual Violence Response Team: 0800-033-3333</p>
