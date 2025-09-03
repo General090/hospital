@@ -87,7 +87,7 @@ const contact = () => {
             Leave us a message
           </h1>
           <div className="flex items-center gap-10 mx-10">
-            <div className="relative w-[30%] hidden md:block">
+            <div className="relative w-[30%] hidden lg:block">
               {/* Image */}
               <img
                 src={Mock}
@@ -95,7 +95,7 @@ const contact = () => {
               />
             </div>
 
-            <div className="md:w-[60%] w-full">
+            <div className="lg:w-[60%] w-full">
               <form className="flex flex-col" onSubmit={handleSubmit}>
                 <div className="flex flex-col">
                   <label htmlFor="name" className="mb-2">

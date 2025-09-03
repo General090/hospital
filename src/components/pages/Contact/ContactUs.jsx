@@ -7,8 +7,8 @@ import Linkedin from "../../../assets/linkedin.png"
 const ContactUs = () => {
   return (
     <>
-      <div className="md:flex items-center justify-between mx-5 md:mx-60 my-20">
-        <div className="md:text-center">
+      <div className="md:flex items-center justify-between mx-5 md:mx-10 lg:mx-60 my-20">
+        <div className="md:text-center mb-5 md:mb-0">
           <h1 className="font-bold text-4xl pb-2">Email</h1>
           <p>liftedcarehealth@gmail.com</p>
           <p>+234 81 0000000</p>
